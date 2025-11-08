@@ -1,5 +1,5 @@
 # Redis Caching Demo in Laravel
-    **Redis** est une base de données en mémoire, qui stock les données en paires clé-valeur.
+**Redis:** est une base de données en mémoire, qui stock les données en paires clé-valeur.
 
 ## Description 
 
@@ -13,7 +13,7 @@
 2. Redémarer le service php8.ton_version-fpm.service.
 3. Installer le package **predis** via `composer require predis/predis`.
 4. Modifier la variable d'env:  `CACHE_STORE=redis` 
-5. Editer `.env` pour utiliser votre **redis configuration** par défaut c'est:
+5. Editer `.env` pour utiliser votre **redis configuration** par défaut c'est:<br>
 `REDIS_CLIENT=phpredis`<br>
 `REDIS_HOST=127.0.0.1`<br>
 `REDIS_PASSWORD=null`<br>
@@ -39,7 +39,7 @@
 ```
 
 
-* **Note**:
+**Note**:
 * **Benchmark** est la façon recommandé pour mesure le temps d'exécution d'un bloc de code.
 * On utilse la méthode **remember** pour cacher le résulter de la closure, et 5 => le TTL en seconds.
 
